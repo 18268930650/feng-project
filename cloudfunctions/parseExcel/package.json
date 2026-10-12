@@ -1,0 +1,10 @@
+{
+  "name": "parseExcel",
+  "version": "1.0.0",
+  "description": "微信云开发Excel解析并存入云数据库",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "~2.6.3",
+    "node-xlsx": "^0.23.0"
+  }
+}

@@ -1,0 +1,625 @@
+
+	/* 页面基础容器 */
+.page-container {
+		min-height: 100vh;
+		background-color: #f1f5f9;
+		padding: 24rpx 20rpx;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		gap: 20rpx;
+}
+
+	/* 顶部操作卡片 */
+.top-bar-card {
+		background: #ffffff;
+		border-radius: 18rpx;
+		padding: 22rpx 24rpx;
+		box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.04);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 16rpx;
+}
+.action-btn-group {
+		display: flex;
+		align-items: center;
+		gap: 14rpx;
+}
+.btn-main {
+		height: 76rpx;
+		padding: 0 32rpx;
+		background: linear-gradient(135deg, #07c160, #059669);
+		color: #ffffff;
+		font-size: 27rpx;
+		font-weight: 600;
+		border-radius: 14rpx;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+		box-shadow: 0 6rpx 16rpx rgba(7, 193, 96, 0.28);
+}
+.btn-main:active {
+		opacity: 0.9;
+		transform: scale(0.98);
+}
+.btn-icon {
+		font-size: 28rpx;
+		margin-right: 8rpx;
+}
+.btn-share {
+		height: 76rpx;
+		padding: 0 26rpx;
+		background: #f1f5f9;
+		color: #475569;
+		font-size: 26rpx;
+		font-weight: 500;
+		border-radius: 14rpx;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1rpx solid #e2e8f0;
+}
+.btn-share:active {
+		background: #e2e8f0;
+}
+.share-icon {
+		font-size: 26rpx;
+		margin-right: 6rpx;
+}
+.status-box {
+		display: flex;
+		align-items: center;
+		gap: 14rpx;
+}
+.status-pill {
+		display: flex;
+		align-items: center;
+		padding: 6rpx 16rpx;
+		border-radius: 30rpx;
+}
+.status-locked {
+		background-color: #f1f5f9;
+}
+.status-locked .status-dot {
+		background-color: #94a3b8;
+}
+.status-locked .status-label {
+		color: #64748b;
+}
+.status-unlocked {
+		background-color: #ecfdf5;
+}
+.status-unlocked .status-dot {
+		background-color: #07c160;
+}
+.status-unlocked .status-label {
+		color: #059669;
+}
+.status-dot {
+		width: 12rpx;
+		height: 12rpx;
+		border-radius: 50%;
+		margin-right: 8rpx;
+}
+.status-label {
+		font-size: 23rpx;
+		font-weight: 500;
+}
+.lock-link {
+		font-size: 23rpx;
+		color: #64748b;
+		padding: 6rpx;
+		text-decoration: underline;
+}
+
+	/* 表格卡片 */
+.table-card {
+		background: #ffffff;
+		border-radius: 18rpx;
+		padding: 24rpx 20rpx;
+		box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.04);
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+}
+
+	/* 🔍 查询条件筛选栏样式 */
+.filter-panel {
+		background: #f8fafc;
+		border: 1rpx solid #e2e8f0;
+		border-radius: 14rpx;
+		padding: 16rpx 18rpx;
+		margin-bottom: 20rpx;
+		display: flex;
+		flex-direction: column;
+		gap: 12rpx;
+}
+.filter-row {
+		display: flex;
+		align-items: center;
+		gap: 12rpx;
+		flex-wrap: nowrap;
+}
+.filter-label-wrap {
+		flex-shrink: 0;
+}
+.filter-label {
+		font-size: 26rpx;
+		font-weight: 600;
+		color: #334155;
+		white-space: nowrap;
+}
+.filter-input-wrapper {
+		flex: 1;
+		height: 68rpx;
+		background-color: #ffffff;
+		border: 2rpx solid #cbd5e1;
+		border-radius: 10rpx;
+		display: flex;
+		align-items: center;
+		padding: 0 14rpx;
+		box-sizing: border-box;
+		transition: border-color 0.2s ease;
+}
+.filter-input-wrapper:focus-within {
+		border-color: #3b82f6;
+		box-shadow: 0 0 0 2rpx rgba(59, 130, 246, 0.15);
+}
+.filter-icon {
+		font-size: 26rpx;
+		margin-right: 8rpx;
+		opacity: 0.5;
+}
+.filter-input {
+		flex: 1;
+		height: 100%;
+		font-size: 25rpx;
+		color: #1e293b;
+}
+.input-placeholder {
+		color: #94a3b8;
+		font-size: 24rpx;
+}
+.clear-input-icon {
+		font-size: 26rpx;
+		color: #94a3b8;
+		padding: 6rpx 8rpx;
+}
+.filter-actions {
+		display: flex;
+		align-items: center;
+		gap: 10rpx;
+		flex-shrink: 0;
+}
+.btn-filter-search {
+		height: 68rpx;
+		padding: 0 24rpx;
+		background: #3b82f6;
+		color: #ffffff;
+		font-size: 24rpx;
+		font-weight: 600;
+		border-radius: 10rpx;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+		box-shadow: 0 4rpx 10rpx rgba(59, 130, 246, 0.25);
+}
+.btn-filter-icon {
+		font-size: 24rpx;
+		margin-right: 6rpx;
+}
+.btn-filter-search:active {
+		background: #2563eb;
+		transform: scale(0.98);
+}
+.btn-filter-reset {
+		height: 68rpx;
+		padding: 0 18rpx;
+		background: #e2e8f0;
+		color: #475569;
+		font-size: 24rpx;
+		border-radius: 10rpx;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+}
+.btn-filter-reset:active {
+		background: #cbd5e1;
+}
+
+	/* 筛选中提示条 */
+.filter-status-tag {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background: #eff6ff;
+		border: 1rpx dashed #93c5fd;
+		border-radius: 8rpx;
+		padding: 10rpx 14rpx;
+		font-size: 22rpx;
+}
+.tag-left {
+		display: flex;
+		align-items: center;
+		gap: 8rpx;
+}
+.tag-badge {
+		background: #3b82f6;
+		color: #ffffff;
+		font-size: 19rpx;
+		padding: 2rpx 8rpx;
+		border-radius: 4rpx;
+		font-weight: 500;
+}
+.tag-desc {
+		color: #1e40af;
+}
+.tag-highlight {
+		font-weight: bold;
+		color: #1d4ed8;
+}
+.tag-right {
+		display: flex;
+		align-items: center;
+		gap: 12rpx;
+}
+.tag-count {
+		color: #2563eb;
+		font-weight: 600;
+}
+.tag-clear-btn {
+		color: #ef4444;
+		cursor: pointer;
+		font-weight: 500;
+		padding: 2rpx 6rpx;
+}
+.btn-reset-empty {
+		margin-top: 16rpx;
+		height: 60rpx;
+		padding: 0 24rpx;
+		background-color: #eff6ff;
+		color: #3b82f6;
+		font-size: 23rpx;
+		border-radius: 10rpx;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+}
+
+	/* 表格滚动容器 */
+.table-scroll-view {
+		width: 100%;
+		overflow-x: auto;
+}
+
+	/* 纯净 Excel 表格样式（工整对齐网格） */
+.pure-excel-table {
+		min-width: 100%;
+		width: -webkit-max-content;
+		width: max-content;
+		display: flex;
+		flex-direction: column;
+		border: 1rpx solid #e2e8f0;
+		border-radius: 12rpx;
+		overflow: hidden;
+}
+.excel-tr {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		border-bottom: 1rpx solid #e2e8f0;
+}
+.excel-tr:last-child {
+		border-bottom: none;
+}
+.excel-header-tr {
+		background-color: #f1f5f9;
+}
+.excel-th {
+		flex: 1;
+		min-width: 170rpx;
+		padding: 20rpx 16rpx;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		border-right: 1rpx solid #e2e8f0;
+		box-sizing: border-box;
+		background-color: #f1f5f9;
+}
+.excel-th:last-child {
+		border-right: none;
+}
+.th-font {
+		font-size: 26rpx;
+		font-weight: 600;
+		color: #1e293b;
+		white-space: nowrap;
+}
+.excel-body-tr {
+		background-color: #ffffff;
+		transition: background-color 0.15s ease;
+}
+.excel-body-tr:hover, .excel-body-tr:active {
+		background-color: #f8fafc;
+}
+.excel-tr-even {
+		background-color: #fafbfc;
+}
+.excel-td {
+		flex: 1;
+		min-width: 170rpx;
+		padding: 20rpx 16rpx;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		border-right: 1rpx solid #e2e8f0;
+		box-sizing: border-box;
+}
+.excel-td:last-child {
+		border-right: none;
+}
+.excel-cell-text {
+		font-size: 25rpx;
+		color: #334155;
+		line-height: 1.4;
+		text-align: center;
+		word-break: break-all;
+}
+
+	/* 文件列表表格样式 */
+.data-table {
+		min-width: 680px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+}
+.table-row {
+		display: flex;
+		align-items: center;
+		border-bottom: 1rpx solid #f1f5f9;
+}
+.table-header-row {
+		background-color: #f8fafc;
+		border-radius: 10rpx;
+		font-weight: 600;
+}
+.th {
+		padding: 18rpx 14rpx;
+		font-size: 25rpx;
+		color: #475569;
+		text-align: left;
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
+}
+.table-data-row {
+		transition: background-color 0.2s ease;
+}
+.table-data-row:hover, .table-data-row:active {
+		background-color: #f8fafc;
+}
+.row-even {
+		background-color: #fafbfc;
+}
+.td {
+		padding: 18rpx 14rpx;
+		font-size: 25rpx;
+		color: #334155;
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
+}
+.cell-id {
+		width: 60px;
+		min-width: 60px;
+		justify-content: center;
+		text-align: center;
+}
+.cell-name {
+		flex: 1;
+		min-width: 180px;
+		overflow: hidden;
+}
+.file-icon-mini {
+		font-size: 26rpx;
+		margin-right: 10rpx;
+}
+.file-name-text {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		color: #0f172a;
+		font-weight: 500;
+}
+.cell-ext {
+		width: 75px;
+		min-width: 75px;
+}
+.ext-tag {
+		font-size: 19rpx;
+		background-color: #e2e8f0;
+		color: #475569;
+		padding: 2rpx 8rpx;
+		border-radius: 6rpx;
+		font-weight: 600;
+}
+.cell-size {
+		width: 85px;
+		min-width: 85px;
+		color: #64748b;
+}
+.cell-time {
+		width: 140px;
+		min-width: 140px;
+		color: #64748b;
+		font-size: 23rpx;
+}
+.cell-status {
+		width: 95px;
+		min-width: 95px;
+}
+.badge-status {
+		font-size: 21rpx;
+		padding: 4rpx 10rpx;
+		border-radius: 6rpx;
+}
+.badge-status.success {
+		background-color: #dcfce7;
+		color: #15803d;
+}
+.cell-action {
+		width: 90px;
+		min-width: 90px;
+		justify-content: center;
+		gap: 12rpx;
+}
+.action-btn {
+		font-size: 23rpx;
+		cursor: pointer;
+}
+.link-text {
+		color: #07c160;
+}
+.delete-text {
+		color: #ef4444;
+}
+
+	/* 空状态 */
+.empty-state {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 70rpx 20rpx;
+}
+.empty-icon {
+		font-size: 56rpx;
+		margin-bottom: 12rpx;
+}
+.empty-text {
+		font-size: 24rpx;
+		color: #94a3b8;
+		text-align: center;
+		line-height: 1.5;
+}
+
+	/* 密码模态弹窗 */
+.modal-mask {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(15, 23, 42, 0.6);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 9999;
+		-webkit-backdrop-filter: blur(4px);
+		        backdrop-filter: blur(4px);
+		padding: 40rpx;
+		box-sizing: border-box;
+}
+.modal-card {
+		width: 100%;
+		max-width: 580rpx;
+		background: #ffffff;
+		border-radius: 24rpx;
+		overflow: hidden;
+		box-shadow: 0 20rpx 50rpx rgba(0, 0, 0, 0.2);
+		animation: modalFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes modalFadeIn {
+from {
+			opacity: 0;
+			transform: scale(0.92) translateY(20rpx);
+}
+to {
+			opacity: 1;
+			transform: scale(1) translateY(0);
+}
+}
+.modal-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 30rpx 32rpx 20rpx;
+		border-bottom: 1rpx solid #f1f5f9;
+}
+.modal-title {
+		font-size: 32rpx;
+		font-weight: 600;
+		color: #1e293b;
+}
+.modal-close {
+		font-size: 32rpx;
+		color: #94a3b8;
+		padding: 10rpx;
+}
+.modal-body {
+		padding: 32rpx;
+}
+.modal-desc {
+		font-size: 26rpx;
+		color: #64748b;
+		margin-bottom: 20rpx;
+		display: block;
+}
+.input-wrapper {
+		border: 2rpx solid #e2e8f0;
+		border-radius: 14rpx;
+		background-color: #f8fafc;
+		padding: 0 20rpx;
+		height: 84rpx;
+		display: flex;
+		align-items: center;
+}
+.input-wrapper.has-error {
+		border-color: #ef4444;
+		background-color: #fef2f2;
+}
+.pwd-input {
+		width: 100%;
+		height: 100%;
+		font-size: 28rpx;
+		color: #1e293b;
+}
+.error-msg {
+		color: #ef4444;
+		font-size: 22rpx;
+		margin-top: 12rpx;
+		display: block;
+}
+.modal-footer {
+		display: flex;
+		border-top: 1rpx solid #f1f5f9;
+		padding: 20rpx 32rpx 30rpx;
+		gap: 20rpx;
+}
+.modal-btn {
+		flex: 1;
+		height: 80rpx;
+		font-size: 28rpx;
+		font-weight: 600;
+		border-radius: 14rpx;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+}
+.btn-cancel {
+		background-color: #f1f5f9;
+		color: #64748b;
+}
+.btn-confirm {
+		background: linear-gradient(135deg, #07c160, #059669);
+		color: #ffffff;
+}
